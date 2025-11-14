@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estiloimg.css">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/Estilogaleria.css">
+    <link rel="stylesheet" href="css/EstiloPromociones.css">
+    <link rel="stylesheet" href="css/Responsivo.css">
+    <title>ARUMA home</title>
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="img/Logochico.png" alt="Logo" id="imgLogochico">
+        </div>
+        <button class="btnHamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+        <nav id="menu">
+            <ul>
+                <li class="botonmenu"><a href="index.html">Inicio</a></li>
+                <li class="botonmenu"><a href="Nosotros.html">Nosotras</a></li>
+                <li class="botonmenu"><a href="Productos.html">Productos</a></li>
+                <li class="botonmenu"><a href="Promociones.html">Promociones</a></li>
+                <li class="botonmenu"><a href="Contacto.html">Contacto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+<main>
+<h1>Promociones</h1>
+
+
+<div id="promos" class="gallery">
+
+  <div class="gallery-item" data-id="funda">
+    <img src="img/Habitacion.png" alt="Dormitorio">
+    <div class="desc">
+      <strong>Almohadón</strong><br>
+      <small>Precio: $8.500</small>
+    </div>
+    <div class="actions">
+      <div class="qty-box">
+        <button class="btn-dec" type="button">−</button>
+        <input class="qty" type="number" min="1" value="1">
+        <button class="btn-inc" type="button">+</button>
+      </div>
+      <button class="btn-add" type="button">Agregar</button>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-id="toalla">
+    <img src="img/banio.png" alt="Baño">
+    <div class="desc">
+      <strong>Toalla de mano</strong><br>
+      <small>Precio: $6.200</small>
+    </div>
+    <div class="actions">
+      <div class="qty-box">
+        <button class="btn-dec" type="button">−</button>
+        <input class="qty" type="number" min="1" value="1">
+        <button class="btn-inc" type="button">+</button>
+      </div>
+      <button class="btn-add" type="button">Agregar</button>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-id="mantel">
+    <img src="img/Cocina.png" alt="Cocina">
+    <div class="desc">
+      <strong>Mantel</strong><br>
+      <small>Precio: $19.900</small>
+    </div>
+    <div class="actions">
+      <div class="qty-box">
+        <button class="btn-dec" type="button">−</button>
+        <input class="qty" type="number" min="1" value="1">
+        <button class="btn-inc" type="button">+</button>
+      </div>
+      <button class="btn-add" type="button">Agregar</button>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-id="velas">
+    <img src="img/living.png" alt="Living">
+    <div class="desc">
+      <strong>Set de velas</strong><br>
+      <small>Precio: $4.800</small>
+    </div>
+    <div class="actions">
+      <div class="qty-box">
+        <button class="btn-dec" type="button">−</button>
+        <input class="qty" type="number" min="1" value="1">
+        <button class="btn-inc" type="button">+</button>
+      </div>
+      <button class="btn-add" type="button">Agregar</button>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-id="combo_deco">
+    <img src="img/gangas.png" alt="Gangas">
+    <div class="desc">
+      <strong>Combo deco</strong><br>
+      <small>Precio: $15.000</small>
+    </div>
+    <div class="actions">
+      <div class="qty-box">
+        <button class="btn-dec" type="button">−</button>
+        <input class="qty" type="number" min="1" value="1">
+        <button class="btn-inc" type="button">+</button>
+      </div>
+      <button class="btn-add" type="button">Agregar</button>
+    </div>
+  </div>
+
+</div>
+
+
+   <section class="items" id="cartRows"></section>
+
+ 
+  <section class="resultados">
+    <h3>Resumen</h3>
+    <p>Subtotal (sin descuentos): <strong id="subtotal">$0</strong></p>
+    <p>Descuentos por producto (mejor promo entre 3x2 y 2do al 50%): <strong id="discount-items">$0</strong></p>
+    <p>Promo 10% de descuento superando $30.000): <strong id="discount-c">$0</strong></p>
+    <p style="font-size:1.15rem"><strong>Total a pagar: <span id="grand-total">$0</span></strong></p>
+  </section>
+</main>
+
+<footer>
+<p>Medios de pago</p>
+    <div class="contenedorfooter">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" class="icon-logo lazyload " alt="visa" width="40" height="25">
+	    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" class="icon-logo lazyload " alt="mastercard" width="40" height="25">			
+	    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" class="icon-logo lazyload " alt="amex" width="40" height="25">			
+	    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" class="icon-logo lazyload " alt="ar_banelco" width="40" height="25">				
+	    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" class="icon-logo lazyload " alt="ar_cabal" width="40" height="25">				
+	    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/link@2x.png" class="icon-logo lazyload " alt="ar_link" width="40" height="25">		
+	    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" class="icon-logo lazyload " alt="ar_tarjeta-naranja" width="40" height="25">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" class="icon-logo lazyload " alt="nativa" width="40" height="25">				
+	    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" class="icon-logo lazyload " alt="ar_cencosud" width="40" height="25">				
+	    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" class="icon-logo lazyload " alt="ar_argencard" width="40" height="25">				
+	    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabaldebit@2x.png" class="icon-logo lazyload " alt="ar_cabaldebit" width="40" height="25">
+	    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/provincianet@2x.png" class="icon-logo lazyload " alt="ar_provincianet" width="40" height="25">
+    </div>
+<br>
+<p>Medios de envío</p>
+    <div class="contenedorfooter">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/oca@2x.png" class="icon-logo lazyload " alt="ar_oca" width="40" height="25">
+		<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/9075@2x.png" class="icon-logo lazyload " alt="api_9075" width="40" height="25">
+    </div>    
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/promociones.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+main {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fefdfc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4B4B4B;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 100px 40px 120px 120px;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 8px;
+  }
+  
+  .item select,
+  .item input[type="number"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .item input[type="number"] {
+    text-align: center;
+  }
+  
+  .item .btn-del {
+    border: 1px solid #c33;
+    background: white;
+    color: #c33;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+  }
+  
+  .item-precio{
+    text-align: right;
+    font-size: 14px;
+  }
+  .item-subtotal {
+    text-align: right;
+    font-size: 14px;
+  }
+
+  #addItem {
+    background-color: #A8B19A;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .resultados {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .resultados h3 {
+    margin: 0 0 8px;
+  }
+  
+  .resultados h4 {
+    margin: 12px 0 6px;
+  }
+  
+  .resultados p {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+
+
+/* Promociones  */
+
+
+#promos.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;   
+  gap: 12px;                         
+  max-width: 100%;
+}
+
+
+#promos .gallery-item{
+  margin: 0 !important;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#promos .gallery-item{
+  flex: 0 0 calc((100% - 4*12px) / 5);
+  max-width: calc((100% - 4*12px) / 5);
+}
+
+
+@media (max-width: 1024px){
+  #promos .gallery-item{
+    flex: 0 0 calc((100% - 3*12px) / 4);
+    max-width: calc((100% - 3*12px) / 4);
+  }
+}
+
+
+@media (max-width: 800px){
+  #promos .gallery-item{
+    flex: 0 0 calc((100% - 2*12px) / 3);
+    max-width: calc((100% - 2*12px) / 3);
+  }
+}
+
+
+@media (max-width: 560px){
+  #promos .gallery-item{
+    flex: 0 0 calc((100% - 1*12px) / 2);
+    max-width: calc((100% - 1*12px) / 2);
+  }
+}
+
+
+@media (max-width: 360px){
+  #promos .gallery-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+#promos .gallery-item img{
+  width: 100%;
+  height: 140px;          
+  object-fit: cover;
+  display: block;
+}
+
+
+#promos .desc{
+  padding: 10px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#promos .actions{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 10px;
+  gap: 6px;
+}
+
+#promos .qty-box{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#promos .qty{
+  width: 38px;
+  height: 26px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#promos .btn-dec,
+#promos .btn-inc{
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#promos .btn-add{
+  background-color: #A8B19A;
+  color: #fff;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 120px;        
+  text-align: center;
+}
+
+.line-dec,
+.line-inc {
+    background-color: #A8B19A;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.line-dec:hover,
+.line-inc:hover {
+    background-color: #8f9c82;
+}
